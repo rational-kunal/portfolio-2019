@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portfolio-2019/static/css/main.3492a43a.chunk.css",
+    "main.js": "/portfolio-2019/static/js/main.34cb21bd.chunk.js",
+    "main.js.map": "/portfolio-2019/static/js/main.34cb21bd.chunk.js.map",
+    "runtime-main.js": "/portfolio-2019/static/js/runtime-main.64908580.js",
+    "runtime-main.js.map": "/portfolio-2019/static/js/runtime-main.64908580.js.map",
+    "static/js/2.bcc79647.chunk.js": "/portfolio-2019/static/js/2.bcc79647.chunk.js",
+    "static/js/2.bcc79647.chunk.js.map": "/portfolio-2019/static/js/2.bcc79647.chunk.js.map",
+    "index.html": "/portfolio-2019/index.html",
+    "precache-manifest.02ed380273a77c8bd8540be1685ecec6.js": "/portfolio-2019/precache-manifest.02ed380273a77c8bd8540be1685ecec6.js",
+    "service-worker.js": "/portfolio-2019/service-worker.js",
+    "static/css/main.3492a43a.chunk.css.map": "/portfolio-2019/static/css/main.3492a43a.chunk.css.map",
+    "static/media/cpp.svg": "/portfolio-2019/static/media/cpp.e3033ba3.svg",
+    "static/media/django.svg": "/portfolio-2019/static/media/django.7efd4523.svg",
+    "static/media/document_link.svg": "/portfolio-2019/static/media/document_link.a9e55355.svg",
+    "static/media/express.svg": "/portfolio-2019/static/media/express.ea7eb485.svg",
+    "static/media/github.svg": "/portfolio-2019/static/media/github.3050429b.svg",
+    "static/media/github_link.svg": "/portfolio-2019/static/media/github_link.e5757c23.svg",
+    "static/media/html.svg": "/portfolio-2019/static/media/html.c259f84a.svg",
+    "static/media/intagram.svg": "/portfolio-2019/static/media/intagram.5621ff5d.svg",
+    "static/media/js.svg": "/portfolio-2019/static/media/js.71a99829.svg",
+    "static/media/link_link.svg": "/portfolio-2019/static/media/link_link.d468637c.svg",
+    "static/media/linkedin.svg": "/portfolio-2019/static/media/linkedin.008d9382.svg",
+    "static/media/python.svg": "/portfolio-2019/static/media/python.7eb92d8e.svg",
+    "static/media/react.svg": "/portfolio-2019/static/media/react.969e6dcd.svg"
+  }
+}
