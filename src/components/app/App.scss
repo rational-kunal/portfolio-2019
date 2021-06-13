@@ -1,0 +1,24 @@
+@mixin skew($side: right, $deg: -20deg, $right: -15px, $left: -15px, $width: 30px, $bg: #fff) {
+    position: relative;
+  
+    &:before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: -15px;
+
+  
+      display: block;
+      width: $width;
+      background: $bg;
+      -webkit-transform: skew($deg);
+      -ms-transform: skew($deg);
+      transform: skew($deg);
+    }
+  }
+
+  .left-skew {
+    @include skew($side: left, $bg: red, $deg: 20deg, $left: -28px, $width: 55px);
+  }
+  

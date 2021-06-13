@@ -1,0 +1,139 @@
+@import '../_style/size';
+@import '../_style/font';
+@import '../_style/color';
+
+.project_container {
+    position: relative;
+    
+    @include resp_big_container('width');
+    
+    margin: 7.5vh auto;
+    padding: 10px 0 20px 0;
+    @include respond-to('small') {
+        padding: 10px 0 40px 0;
+    }
+}
+
+.project_bg {
+    position: absolute;
+
+    @include resp_reg_container('width');
+    
+    height: 100%;
+    top: 0;
+    @include resp_delta_container('left');
+    border-radius: 50px;
+
+    background-color: $color_pink;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.project_title {
+    position: relative;
+    padding: 10px 0px 5px 0px;
+
+    color: $color_dark_blue;
+    font-size: 32px;
+    font-family: $font_main;
+}
+
+.project_wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+
+    flex-direction: column;
+    @include respond-to('small') {
+        flex-direction: row;
+    }
+}
+
+.project_info_wrapper {
+    position: relative;
+    margin: 0 0 0 0;
+    // padding: 10px $size_delta_container 10px $size_delta_container;
+    border-radius: 20px;
+    @include resp_reg_container('width');
+
+    font-size: 16px;
+    @include respond-to('small') {
+        font-size: 18px;
+    }
+    @include respond-to('medium') {
+        font-size: 20px;
+    }
+    @include respond-to('large') {
+        font-size: 22px;
+    }
+    font-family: $font_regular;
+
+    background-color: $color_dark_pink;
+    background-image: linear-gradient(to right, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
+    color: $color_white;
+    
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px 0px;
+    transition: box-shadow 0.5s ease;
+}
+
+.project_info_wrapper:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 40px 0px;
+}
+
+.project_info {
+    position: relative;
+    padding: 30px $size_xs_delta_container;
+    @include respond-to('small') {
+        padding: 30px $size_sm_delta_container;
+    }
+    @include respond-to('medium') {
+        padding: 30px $size_md_delta_container;
+    }
+    @include respond-to('large') {
+        padding: 30px $size_lg_delta_container;
+    }
+}
+
+.project_link_wrapper {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    @include respond-to('small') {
+        flex-direction: column;
+    }
+    height: 100%;
+    
+}
+
+.project_link {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px 0 auto 10px;
+    @include respond-to('small') {
+        margin: 0px auto 10px auto;
+    }
+    
+    height: 50px;
+    width: 50px;
+    background-color: $color_red;
+    background-color: #8989ba;
+    
+    border-radius: 100%;
+    
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px 0px;
+    transition: box-shadow 0.5s ease;
+}
+
+.project_link:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 40px 0px;
+}
+
+.project_link_ic {
+    position: relative;
+    width: 40%;
+    height: 40%;
+}

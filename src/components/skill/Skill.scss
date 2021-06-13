@@ -1,0 +1,147 @@
+@import '../_style/size';
+@import '../_style/font';
+@import '../_style/color';
+
+.skill_wrapper {
+    position: relative;
+    
+    @include resp_big_container('width');
+    
+    margin: 80px auto 0 auto;
+
+    z-index: 1;
+}
+
+.skill_bg {
+    position: relative;
+    border-radius: 50px;
+    @include resp_reg_container('width');
+    
+    background-color: $color_pink;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    padding: 10px 0 10px 0;
+}
+
+.skill_title {
+    position: absolute;
+
+    top: 50px;
+    left: -30px;
+    transform: rotate(-90deg);
+
+    color: $color_dark_blue;
+
+    font-size: 32px;
+    @include respond-to('large') {
+        font-size: 40px;
+    }
+    font-weight: 700;
+    font-family: $font_main;
+}
+
+.skill_group_wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+
+    border-radius: 50px;
+
+    width: 100%;
+
+    transform: translateX($size_xs_delta_container);
+    -webkit-transform: translateX($size_xs_delta_container);
+    // padding: 7px 17px;
+    @include respond-to('small') {
+        transform: translateX($size_sm_delta_container);
+        -webkit-transform: translateX($size_sm_delta_container);
+        // padding: 8px 18px;
+    }
+    @include respond-to('medium') {
+        transform: translateX($size_md_delta_container);
+        -webkit-transform: translateX($size_md_delta_container);
+        // padding: 9px 19px;
+    }
+    @include respond-to('large') {
+        transform: translateX($size_lg_delta_container);
+        -webkit-transform: translateX($size_lg_delta_container);
+        // padding: 10px 20px;
+    }
+
+    margin: 20px 0px 20px 0px;
+
+    background: $grad_skill;
+    background-image: linear-gradient(to right, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
+
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px 0px;
+    transition: box-shadow 0.5s ease;
+}
+
+.skill_group_wrapper:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 40px 0px;
+}
+
+
+.skill_group_title {
+    position: relative;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px 20px;
+
+    color: $color_white;
+    
+    font-size: 18px;
+    @include respond-to('small') {
+        font-size: 20px;
+    }
+    @include respond-to('medium') {
+        font-size: 24px;
+    }
+    @include respond-to('large') {
+        font-size: 26px;
+    }
+    font-family: $font_regular;
+}
+
+.skill_group_icon {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    margin: 10px 20px;
+    transform: translateY(5px);
+}
+
+.skill_icon_wrapper {
+    position: relative;
+    margin: 0 14px 0 0;
+    @include respond-to('small') {
+        margin: 0 16px 0 0;
+    }
+    @include respond-to('medium') {
+        margin: 0 18px 0 0;
+    }
+    @include respond-to('large') {
+        margin: 0 20px 0 0;
+    }
+}
+
+.skill_icon_img {
+    position: relative;
+    
+    height: 26px;
+    width: auto;
+    @include respond-to('small') {
+        height: 28px;
+        width: auto;
+    }
+    @include respond-to('medium') {
+        height: 32px;
+        width: auto;
+    }
+    @include respond-to('large') {
+        height: 44px;
+        width: auto;
+    }
+}

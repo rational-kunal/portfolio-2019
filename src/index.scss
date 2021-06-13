@@ -1,0 +1,10 @@
+@import './components/_style/color';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: $color_light;
+}

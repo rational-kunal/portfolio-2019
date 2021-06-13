@@ -1,0 +1,95 @@
+@import './breakpoint';
+
+$size_big_container: 1000px;
+$size_small_container: 860px;
+$size_reg_container: 930px;
+$size_delta_container: 70px;
+
+$size_xs_big_container: 300px;
+$size_xs_small_container: 260px;
+$size_xs_reg_container: 280px;
+$size_xs_delta_container: 20px;
+$size_xs_img: 250px;
+
+$size_sm_big_container: 400px;
+$size_sm_small_container: 340px;
+$size_sm_reg_container: 370px;
+$size_sm_delta_container: 30px;
+$size_sm_img: 260px;
+
+$size_md_big_container: 600px;
+$size_md_small_container: 480px;
+$size_md_reg_container: 540px;
+$size_md_delta_container: 60px;
+$size_md_img: 280px;
+
+$size_lg_big_container: 1000px;
+$size_lg_small_container: 860px;
+$size_lg_reg_container: 930px;
+$size_lg_delta_container: 70px;
+$size_lg_img: 300px;
+
+@mixin resp_big_container($property) {
+    #{$property}: $size_xs_big_container;
+    @include respond-to('small') {
+        #{$property}: $size_sm_big_container;
+    }
+    @include respond-to('medium') {
+        #{$property}: $size_md_big_container;
+    }
+    @include respond-to('large') {
+        #{$property}: $size_lg_big_container;
+    }
+}
+
+@mixin resp_small_container($property) {
+    #{$property}: $size_xs_small_container;
+    @include respond-to('small') {
+        #{$property}: $size_sm_small_container;
+    }
+    @include respond-to('medium') {
+        #{$property}: $size_md_small_container;
+    }
+    @include respond-to('large') {
+        #{$property}: $size_lg_small_container;
+    }
+}
+
+@mixin resp_reg_container($property) {
+    #{$property}: $size_xs_reg_container;
+    @include respond-to('small') {
+        #{$property}: $size_sm_reg_container;
+    }
+    @include respond-to('medium') {
+        #{$property}: $size_md_reg_container;
+    }
+    @include respond-to('large') {
+        #{$property}: $size_lg_reg_container;
+    }
+}
+
+@mixin resp_delta_container($property) {
+    #{$property}: $size_xs_delta_container;
+    @include respond-to('small') {
+        #{$property}: $size_sm_delta_container;
+    }
+    @include respond-to('medium') {
+        #{$property}: $size_md_delta_container;
+    }
+    @include respond-to('large') {
+        #{$property}: $size_lg_delta_container;
+    }
+}
+
+@mixin resp_img($property) {
+    #{$property}: $size_xs_img;
+    @include respond-to('small') {
+        #{$property}: $size_sm_img;
+    }
+    @include respond-to('medium') {
+        #{$property}: $size_md_img;
+    }
+    @include respond-to('large') {
+        #{$property}: $size_lg_img;
+    }
+}
